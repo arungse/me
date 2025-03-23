@@ -13,11 +13,21 @@
         margin-left: 0;
         margin-right: auto;
     }
+
+    #content {
+        display: none;
+    }
 </style>
 </head>
 
 <body>
+  <font style="font-family:times;font-size:25px;">
+  <p> <font color=blue>create 1 billing opportunity in deep learning by 2025 end</font> </p>
+  <font style="font-size:1rem;">
 
+<div onclick="displayTextContext()" id="clockButton">read more</div>
+
+<div id="content">
 <p> I'm Arun G: programmer and aspiring deep learning researcher </p>
 
 Some things about me:
@@ -34,13 +44,36 @@ Some things about me:
 Some things I follow:
 <ul>
 <li> Top goal <br>
-    In startups, fires never cease to burn. One of the most common complaints I hear from CEOs is that they seem to have infinite things to do on a day-to-day basis, yet weeks will go by, and they don't feel like they have accomplished anything. This dilemma results from getting bogged down with the small immediate things and losing track of the important long-term ones. <br> <br>
-    
-    The Top Goal framework will help you fix this. Greg McKeown, who wrote a phenomenal book on productivity called Essentialism, boils this down to one key concept: <i> Schedule two hours each day to work on your Top Goal only. And do this every single workday. Period. </i> <br> <br>
-    
-    During this Top Goal time, do not respond to emails, texts, calls, and messages. Only work on your top priority during these two hours. If you follow this pattern each workday, you will achieve amazing things. <br> <br>
+     In startups, fires never cease to burn. One of the most common complaints I hear from CEOs is that they seem to have infinite things to do on a day-to-day basis, yet weeks will go by, and they don't feel like they have accomplished anything. This dilemma results from getting bogged down with the small immediate things and losing track of the important long-term ones. <br> <br>
+
+     The Top Goal framework will help you fix this. Greg McKeown, who wrote a phenomenal book on productivity called Essentialism, boils this down to one key concept: <i> Schedule two hours each day to work on your Top Goal only. And do this every single workday. Period. </i> <br> <br>
+
+     During this Top Goal time, do not respond to emails, texts, calls, and messages. Only work on your top priority during these two hours. If you follow this pattern each workday, you will achieve amazing things. <br> <br>
+</li>
+
+<li> Progress <br>
+     What did you do last week? <br>
+     Please reply to this email with approx 5 bullets of what you accomplished last week and cc your manager. <br> <br>
 </li>
 </ul>
+</div>
 
 </body>
 </html>
+
+
+<script>
+function displayTextContext() {
+  var textDisplay = document.getElementById('content');
+  var displaySetting = textDisplay.style.display;
+  var clockButton = document.getElementById('clockButton');
+
+  if (displaySetting == 'block') {
+    textDisplay.style.display = 'none';
+    clockButton.innerHTML = 'read more';
+  } else {
+    textDisplay.style.display = 'block';
+    clockButton.innerHTML = '&#9650;';
+  }
+}
+</script>
